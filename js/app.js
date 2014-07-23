@@ -34,4 +34,8 @@
 	$('[data-spy="scroll"]').each(function () {
 	  var $spy = $(this).scrollspy('refresh')
 	});
+	//Transifex script
+	Transifex.live.onReady(function() {
+Transifex.live.translateNode( $(‘#id’).get(0) );
+});
 })(jQuery);
