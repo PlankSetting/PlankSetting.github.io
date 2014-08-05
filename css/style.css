@@ -22,8 +22,6 @@
 body{
 	position: relative;
 	font-size: 100px;
-	direction: rtl;
-  	unicode-bidi: embed;
 }
 
 .bluetitle{
