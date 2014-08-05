@@ -156,10 +156,10 @@
 			<!-- Transifix -->
 			<script type="text/javascript">
 			  var pic = "bottom-right";
-			  if(Transifex.live.hasLanguageCode('ar')){
+			  Transifex.live.onTranslatePage(function('ar') {
 			  	pic = "bottom-left";
 			  	$('body').css('direction', 'rtl');
-			  }
+			  });
 			  window.liveSettings = {
 			    api_key: "92280751a6d4499b9b131cdcf9d11c22",
 			    picker: pic,
