@@ -27,26 +27,134 @@
 	<!-- COLS -->
 	<div class="row home" id="home">
 		<div class="col-xs-12 col-md-12">
-			<header-dir></header-dir>
+			<div class="jumbotron">
+				<img src="img/planksetting.png"></img>
+				<h1 class="centertitle"><span class="bluetitle">Plank</span>Setting</h1>
+				<p>
+					A simple application that allow users to customize plank dock easily.
+				</p><br>
+				<p>
+					<a class="btn btn-primary btn-lg" target="_blank" href="http://sourceforge.net/projects/planksetting/files/latest/download"><span class="glyphicon glyphicon-download"></span> Download</a>
+				</p>
+				<a href="https://github.com/karim88/PlankSetting/archive/master.zip">Download from Github.com</a><br>
+				<a href="http://gtk-apps.org/content/download.php?content=165100&id=1&tan=34400521&PHPSESSID=06f9d1dc212f9431e72ccdd12da6b459" target="_blank">Download from GTK-App.org</a>
+				<p class="socialbar">
+					<ul class="nav nav-pills nav-justified">
+						<li>
+							<a href="https://facebook.com/herr.linux88" target="_blank"><img src="img/socials/facebook-square-icon.svg" width="32" height="32"></img> Facebook</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/herr_linux" target="_blank"><img src="img/socials/twitter-icon.svg" width="32" height="32"></img> Twitter</a>
+						</li>
+						<li>
+							<a href="https://google.com/+%D9%83%D8%B1%D9%8A%D9%85%D8%A3%D9%88%D9%84%D8%A7%D8%AF%D8%A7%D9%84%D8%B4%D9%84%D8%AD%D8%A9" target="_blank"><img src="img/socials/googleplus-icon.svg" width="32" height="32"></img> Google +</a>
+						</li>
+						<li>
+							<a href="https://github.com/karim88" target="_blank"><img src="img/socials/github-icon.svg" width="32" height="32"></img> Github</a>
+						</li>
+					</ul>
+				</p>
+			</div>
 		</div>
 	</div>
 	
 	<div class="row about" id="about">
 		<div class="col-xs-12 col-md-12">
-			<about-dir></about-dir>
+			<h1>About</h1>
+			<p>A simple application that allow users to customize plank dock easily.</p>
+			<h3>Features:</h3>
+			<blockquote>
+				<p>Customizing the behavior of the dock.</p>
+				<p>Changing the dock theme.</p>
+				<p>Adding new themes.</p>
+				<p>Removing the undesirable themes.</p>
+			</blockquote>
+			<h3>Screenshots:</h3>
+			<img src="img/plank_general_tab.png">
+			<img src="img/plank_themes_tab.png">
+
+			<h3>Note:</h3>
+			<blockquote>
+				You need <a href="https://launchpad.net/plank" target="_blank">Plank</a> to be installed first.
+			</blockquote>
 		</div>
 	</div>
 	
 	<div class="row install" id="install">
 		<div class="col-xs-12 col-md-12">
-			<install-dir></install-dir>
+			<h1>How to Install</h1>
+			<p>to install <span class="bluetitle">PlanKsetting</span>, You should</p>
+			<h2>1 - Download dependences:</h2>
+			<p>Plank 0.6.0</p>
+			<p>Gtk 3.x</p>
+			<p>Python 3.x</p>
+			<p>unzip & unrar programs</p>
+			<br>
+			<p>you can do that by:</p>
+			<h4><label class="label label-warning">Ubuntu & Debian</label></h4>
+			<blockquote>
+				<code>sudo apt-get install unrar unzip python3 libgtk-3-0</code>
+			</blockquote>
+			<h4><label class="label label-info">Arch Linux</label></h4>
+			<blockquote>
+				<code>sudo pacman -S unrar unzip python3 gtk3 </code>
+			</blockquote>
+			<h4><label class="label label-success">Opensuse</label></h4>
+			<blockquote>
+				<code>sudo zypper install unrar unzip python3 gtk3 </code>
+			</blockquote>
+			<h4><label class="label label-primary">Fedora</label></h4>
+			<blockquote>
+				<code>sudo yum install unrar unzip python3 gtk3</code>
+			</blockquote>
+			<h2>2 - Download the code source:</h2>
+			<p>Type in de command line: </p>
+			<blockquote>
+				<code>wget https://github.com/karim88/PlankSetting/archive/master.zip </code>
+			</blockquote>
+			<h2>3 - Install:</h2>
+			<blockquote>
+				<code>unzip master.zip cd PlankSetting-master/</code><br>
+				<code>sudo ./install.sh</code>
+			</blockquote>
+			<h2>Uninstall</h2>
+			<p>if you wish to uninstall <span class="bluetitle">PlankSetting</span>, type in terminal: </p>
+			<blockquote>
+				<code>cd PlankSetting-master/</code><br>
+				<code>chmod +x uninstall.sh</code><br>
+				<code>sudo ./uninstall.sh </code>
+			</blockquote>
 		</div>
 	</div>
 		
 	<div class="row contribute" id="contribute">
 		<div class="col-xs-12 col-md-12">
-			<contribute-dir></contribute-dir>
-			<!-- Transifix --><script type="text/javascript">
+			<h1>Translation</h1>
+			<p>If you wish to contribute in translation of PlankSetting you can do that <a href="https://www.transifex.com/projects/p/planksetting" target="_blank">here</a>.</p>
+			<p>the project is already available in:</p>
+			<p>Arabic</p>
+			<p>English</p>
+			<p>French</p>
+			<h1>Authors and Contributors</h1>
+			<p><a href="https://wiki.ubuntu.com/karim" target="_blank">Karim Oulad Chalha</a> Authors & Arabic, French translator.</p>
+			<h1>Support or Contact</h1>
+			<p>Having trouble with Project page or the application please report it <a href="https://github.com/karim88/PlankSetting/issues" target="_blank">here</a></p>
+			<p>Ohhh I forget, That whould be nice to tell me what you think of the application ?!?</p>
+			<!-- Facebook comment -->
+			<div id="fb-root"></div>
+			<script>
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v2.0";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+			<div class="fb-comments" data-href="http://planksetting.github.io" data-numposts="5" data-colorscheme="light"></div>
+			<p><i>Have Fun (^_^)</i></p>
+			<!-- Transifix -->
+			<script type="text/javascript">
 			  window.liveSettings = {
 			    api_key: "92280751a6d4499b9b131cdcf9d11c22",
 			    picker: "bottom-right",
