@@ -24,9 +24,6 @@ body{
 	font-size: 100px;
 }
 
-body[lang="ar"]{
-	direction: rtl;
-}
 
 .bluetitle{
 	color: #428bca;

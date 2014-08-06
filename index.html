@@ -13,7 +13,7 @@
 	<meta charset="utf-8">
 
 </head>
-<body lang="ar" data-spy="scroll" data-target=".navscroll" data-offset="50">
+<body data-spy="scroll" data-target=".navscroll" data-offset="50">
 	<!-- NAVBAR -->
 	<div class="navscroll">
 		<ul class="nav nav-pills navbar-fixed-top nav-justified" role="tablist">
@@ -158,9 +158,10 @@
 			  Transifex.live.onTranslatePage(function(language_code) { 
 				  if (language_code === 'ar') {
 				        $('blockquote').css('direction', 'rtl');
+				        $('body').css('direction', 'rtl');
 				        pick = 'bottom-left';
 				  } 
-			  }); 
+			  });
 			  window.liveSettings = {
 			  	
 			    api_key: "92280751a6d4499b9b131cdcf9d11c22",
