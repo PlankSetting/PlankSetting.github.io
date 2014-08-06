@@ -154,17 +154,16 @@
 			<p><i>Have Fun (^_^)</i></p>
 			<!-- Transifix -->
 			<script type="text/javascript">
-			  var pick = 'bottom-right';
 			  Transifex.live.onTranslatePage(function(language_code) { 
 				  if (language_code === 'ar') {
 				        $('body').css('direction', 'rtl');
 				        $('blockquote').addClass('arbc');
-				        pick = 'bottom-left';
+				        window.liveSettings.picker = 'bottom-left';
 				  } 
 				  else{
 				        $('body').css('direction', 'ltr');
 				        $('blockquote').removeClass('arbc');
-				        pick = 'bottom-right';
+				        window.liveSettings.picker = 'bottom-right';
 				  }
 			  });
 			  window.liveSettings = {
