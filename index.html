@@ -163,7 +163,8 @@
 			  };
 
 			  Transifex.live.onTranslatePage(function(language_code) { 
-				  if (language_code === 'ar') { 
+				  if (language_code === 'ar') {
+				  		alert(language_code);
 				         $('blockquote').css('direction', 'rtl');
 				         window.liveSettings.picker = 'bottom-left';
 				  } 
