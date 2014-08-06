@@ -158,7 +158,46 @@
 			  Transifex.live.onTranslatePage(function(language_code) { 
 				  if (language_code === 'ar') {
 				        $('body').css('direction', 'rtl');
-				        $('blockquote').addClass('pull-right');
+				        $('blockquote').css({
+				        	  padding: 0 15px 0 0;
+							  margin: 0 0 @baseLineHeight;
+							  border-right: 5px solid @grayLighter;
+							  p {
+							    margin-bottom: 0;
+							    font-size: @baseFontSize * 1.25;
+							    font-weight: 300;
+							    line-height: 1.25;
+							  }
+							  small {
+							    display: block;
+							    line-height: @baseLineHeight;
+							    color: @grayLight;
+							    &:before {
+							      content: '\2014 \00A0';
+							    }
+							  }
+
+							  // Float right with text-align: right
+							  &.pull-right {
+							    float: right;
+							    padding-right: 15px;
+							    padding-left: 0;
+							    border-right: 5px solid @grayLighter;
+							    border-left: 0;
+							    p,
+							    small {
+							      text-align: right;
+							    }
+							    small {
+							      &:before {
+							        content: '';
+							      }
+							      &:after {
+							        content: '\00A0 \2014';
+							      }
+							    }
+							  }
+				        });
 				        pick = 'bottom-left';
 				  } 
 			  });
