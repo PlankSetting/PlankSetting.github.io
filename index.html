@@ -162,8 +162,8 @@
 			    autocollect: true
 			  };
 
-			  Transifex.live.onTranslatePage(function(lang) { 
-				  if (lang === ‘ar’) { 
+			  Transifex.live.onTranslatePage(function(language_code) { 
+				  if (language_code === 'ar') { 
 				         $('blockquote').css('direction', 'rtl');
 				         window.liveSettings.picker = 'bottom-left';
 				  } 
