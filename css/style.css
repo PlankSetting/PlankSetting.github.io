@@ -23,9 +23,6 @@ body{
 	position: relative;
 	font-size: 100px;
 }
-html[lan="ar"] blockquote{
-	direction: rtl;
-}
 
 
 .bluetitle{
