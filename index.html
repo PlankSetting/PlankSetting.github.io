@@ -154,21 +154,20 @@
 			<p><i>Have Fun (^_^)</i></p>
 			<!-- Transifix -->
 			<script type="text/javascript">
+			  var pick = 'bottom-right';
+			  Transifex.live.onTranslatePage(function(language_code) { 
+				  if (language_code === 'ar') {
+				        $('blockquote').css('direction', 'rtl');
+				        pick = 'bottom-left';
+				  } 
+			  }); 
 			  window.liveSettings = {
 			  	
 			    api_key: "92280751a6d4499b9b131cdcf9d11c22",
-			    picker: "bottom-right",
+			    picker: pick,
 			    detectlang: true,
 			    autocollect: true
 			  };
-
-			  Transifex.live.onTranslatePage(function(language_code) { 
-				  if (language_code === 'ar') {
-				  		alert(language_code);
-				         $('blockquote').css('direction', 'rtl');
-				         window.liveSettings.picker = 'bottom-left';
-				  } 
-			  }); 
 			</script>
 			<!-- GA -->
 			<script>
