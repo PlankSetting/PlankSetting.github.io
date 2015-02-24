@@ -1,9 +1,9 @@
 (function($) {
-
-	var app = angular.module("app", []);
-
-	$('[data-spy="scroll"]').each(function () {
-	  var $spy = $(this).scrollspy('refresh')
-	});
+	$('.scrollspy').scrollSpy();
+	
+	//Initializing scroll animation
+	wow = new WOW();
+	wow.init();
 
 })(jQuery);
+

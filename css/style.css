@@ -1,58 +1,90 @@
 
-.hom, .install{
-	background: #fff;
-	color: #428bca;
+.home, .install{
+    color: #1e88e5;
 }
-.install{
-	padding: 90px;
+
+.home{
+	text-align: center;
 }
 
 .about, .contribute{
-	background: #428bca;
+	background: #1e88e5;
 	color: #fff;
-	padding: 90px;
 }
-.nav{
-	background: #fff;
+.about a, .contribute a{
+	color: #fff;
 }
+
 .row{
-	height: 100%;
+	margin: 0px;
+	padding: 8%;
 }
 
-body{
-	position: relative;
-	font-size: 100px;
+.screen{
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgba(250, 250, 250, .7);
+	border-radius: 5px;
+	margin: 5px;
 }
 
+.screen:hover{
+	box-shadow: 0 0 5px white;
+}
 
+footer a{
+	color: #fff;
+}
+
+.social:hover{
+	-webkit-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
 .bluetitle{
-	color: #428bca;
-}
-
-.jumbotron{
-	text-align: center;
-}
-
-.socialbar{
-	text-align: center;
-}
-.about a,.contribute a{
 	color: #000;
-}
-.about a:hover,.contribute a:hover{
-	color: #bbb;
-}
-.install h2{
-	margin-bottom: 25px;
-	margin-top: 25px;
+	text-shadow: 0 0 5px #1e88e5;
 }
 
 footer{
-	padding: 10px;
-	text-align: center;
-	color: #fff;
-	background: #428bca;
+	margin: 0px;
+	padding-top: 10px;
 }
-footer a{
+
+.brand-logo{
+	margin-left: 10px;
+}
+
+blockquote{
+	border-left: 10px solid #1e88e5;
+}
+
+.about blockquote, .contribute blockquote{
+	border-left: 10px solid #fff;
+}
+
+.label-warning{
+	background-color: #D52F22;
 	color: #fff;
+	padding: 5px;
+}
+
+.label-info{
+	background-color: #1793D1;
+	color: #fff;
+	padding: 5px;
+}
+
+.label-success{
+	background-color: #3BA345;
+	color: #fff;
+	padding: 5px;
+}
+
+.label-primary{
+	background-color: #294172;
+	color: #fff;
+	padding: 5px;
 }

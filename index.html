@@ -1,63 +1,63 @@
 <!DOCTYPE html>
-<html ng-app='app'>
+<html>
 <head>
 	<title>PlankSetting</title>
 	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
-	<script src="js/jquery-2.0.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/app.js"></script>
-	<script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
 	<meta charset="utf-8">
 
 </head>
-<body data-spy="scroll" data-target=".navscroll" data-offset="50">
+<body>
 	<!-- NAVBAR -->
 	<div class="navscroll">
-		<ul class="nav nav-pills navbar-fixed-top nav-justified" role="tablist">
-			<li ng-class="{active: tab === 'home'}"><a href="#home" ng-click="tab = 'home'"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-			<li ng-class="{active: tab === 'about'}"><a href="#about" ng-click="tab = 'about'"><span class="glyphicon glyphicon-user"></span> About</a></li>
-			<li ng-class="{active: tab === 'install'}"><a href="#install" ng-click="tab = 'install'"><span class="glyphicon glyphicon-download"></span> How to install</a></li>
-			<li ng-class="{active: tab === 'contribute'}"><a href="#contribute" ng-click="tab = 'contribute'"><span class="glyphicon glyphicon-heart"></span> Contribute</a></li>
-		</ul>
+		<div class="navbar-fixed">
+			<nav>
+			<div class="nav-wrapper blue darken-1">
+				<div class="col s12">
+					<a href="#" class="brand-logo">PlankSetting</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+					<ul role="tablist" class="right hide-on-med-and-down" class="section table-of-contents">
+						<li><a href="#home"><span class="medium mdi-action-home"></span> Home</a></li>
+						<li><a href="#about"><span class="medium mdi-action-account-circle"></span> About</a></li>
+						<li><a href="#install"><span class="medium mdi-file-file-download"></span> How to install</a></li>
+						<li><a href="#contribute"><span class="medium mdi-action-favorite"></span> Contribute</a></li>
+					</ul>
+				</div>
+			</div>
+			</nav>
+		</div>
 	</div>
 	<!-- COLS -->
-	<div class="row home" id="home">
+	<div class="row home wow pluse section scrollspy" id="home">
 		<div class="col-xs-12 col-md-12">
-			<div class="jumbotron">
+			<div class="container">
 				<img src="img/planksetting.png"></img>
-				<h1 class="centertitle"><span class="bluetitle">Plank</span>Setting</h1>
+				<h1 class="centertitle"><span class="bluetitle">Plank</span>Setting v1.3</h1>
 				<p>
 					A simple application that allow users to customize plank dock easily.
 				</p><br>
 				<p>
-					<a class="btn btn-primary btn-lg" target="_blank" href="http://sourceforge.net/projects/planksetting/files/latest/download"><span class="glyphicon glyphicon-download"></span> Download</a>
+					<a class="wow shake btn waves-effect waves-light blue darken-1" target="_blank" href="http://sourceforge.net/projects/planksetting/files/latest/download"><span class="glyphicon glyphicon-download"></span> Download</a>
 				</p>
 				<a href="https://github.com/karim88/PlankSetting/archive/master.zip">Download from Github.com</a><br>
-				<a href="http://gtk-apps.org/content/download.php?content=165100&id=1&tan=34400521&PHPSESSID=06f9d1dc212f9431e72ccdd12da6b459" target="_blank">Download from GTK-App.org</a>
+				<a href="http://gtk-apps.org/content/download.php?content=165100&id=1&tan=71788380" target="_blank">Download from GTK-App.org</a>
 				<p class="socialbar">
-					<ul class="nav nav-pills nav-justified">
-						<li>
-							<a href="https://facebook.com/herr.linux88" target="_blank"><img src="img/socials/facebook-square-icon.svg" width="32" height="32"></img> Facebook</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/herr_linux" target="_blank"><img src="img/socials/twitter-icon.svg" width="32" height="32"></img> Twitter</a>
-						</li>
-						<li>
-							<a href="https://google.com/+%D9%83%D8%B1%D9%8A%D9%85%D8%A3%D9%88%D9%84%D8%A7%D8%AF%D8%A7%D9%84%D8%B4%D9%84%D8%AD%D8%A9" target="_blank"><img src="img/socials/googleplus-icon.svg" width="32" height="32"></img> Google +</a>
-						</li>
-						<li>
-							<a href="https://github.com/karim88" target="_blank"><img src="img/socials/github-icon.svg" width="32" height="32"></img> Github</a>
-						</li>
-					</ul>
+							<a href="https://facebook.com/herr.linux88" target="_blank"><img class="social" src="img/socials/facebook-square-icon.svg" width="48" height="48"></img></a>
+						
+							<a href="https://twitter.com/herr_linux" target="_blank"><img class="social" src="img/socials/twitter-icon.svg" width="48" height="48"></img></a>
+						
+							<a href="https://google.com/+%D9%83%D8%B1%D9%8A%D9%85%D8%A3%D9%88%D9%84%D8%A7%D8%AF%D8%A7%D9%84%D8%B4%D9%84%D8%AD%D8%A9" target="_blank"><img class="social" src="img/socials/googleplus-icon.svg" width="48" height="48"></img></a>
+						
+							<a href="https://github.com/karim88" target="_blank"><img class="social" src="img/socials/github-icon.svg" width="48" height="48"></img></a>
+						
 				</p>
 			</div>
 		</div>
 	</div>
 	
-	<div class="row about" id="about">
+	<div class="wow fadeInLeft row about section scrollspy" id="about">
 		<div class="col-xs-12 col-md-12">
 			<h1>About</h1>
 			<p>A simple application that allow users to customize plank dock easily.</p>
@@ -67,10 +67,13 @@
 				<p>Changing the dock theme.</p>
 				<p>Adding new themes.</p>
 				<p>Removing the undesirable themes.</p>
+				<p>Group Applications in categories</p>
 			</blockquote>
 			<h3>Screenshots:</h3>
-			<img src="img/plank_general_tab.png">
-			<img src="img/plank_themes_tab.png">
+			<img class="materialboxed wow flipInY screen" src="img/plank_general_tab.png" width="300">
+			<img class="materialboxed screen wow flipInY " src="img/plank_themes_tab.png" width="300">
+			<img class="materialboxed screen wow flipInY " src="img/plank_groups_tab.png" width="300">
+
 
 			<h3>Note:</h3>
 			<blockquote>
@@ -79,7 +82,7 @@
 		</div>
 	</div>
 	
-	<div class="row install" id="install">
+	<div class="wow fadeInRight row install section scrollspy" id="install">
 		<div class="col-xs-12 col-md-12">
 			<h1>How to Install</h1>
 			<p>to install <span class="bluetitle">PlanKsetting</span>, You should</p>
@@ -90,19 +93,19 @@
 			<p>unzip & unrar programs</p>
 			<br>
 			<p>you can do that by:</p>
-			<h4><label class="label label-warning">Ubuntu & Debian</label></h4>
+			<h4><label class="label-warning">Ubuntu & Debian</label></h4>
 			<blockquote>
 				<code>sudo apt-get install unrar unzip python3 libgtk-3-0</code>
 			</blockquote>
-			<h4><label class="label label-info">Arch Linux</label></h4>
+			<h4><label class="label-info">Arch Linux</label></h4>
 			<blockquote>
 				<code>sudo pacman -S unrar unzip python3 gtk3 </code>
 			</blockquote>
-			<h4><label class="label label-success">Opensuse</label></h4>
+			<h4><label class="label-success">Opensuse</label></h4>
 			<blockquote>
 				<code>sudo zypper install unrar unzip python3 gtk3 </code>
 			</blockquote>
-			<h4><label class="label label-primary">Fedora</label></h4>
+			<h4><label class="label-primary">Fedora</label></h4>
 			<blockquote>
 				<code>sudo yum install unrar unzip python3 gtk3</code>
 			</blockquote>
@@ -126,7 +129,7 @@
 		</div>
 	</div>
 		
-	<div class="row contribute" id="contribute">
+	<div class="wow fadeInLeft row contribute section scrollspy" id="contribute">
 		<div class="col-xs-12 col-md-12">
 			<h1>Translation</h1>
 			<p>If you wish to contribute in translation of PlankSetting you can do that <a href="https://www.transifex.com/projects/p/planksetting" target="_blank">here</a>.</p>
@@ -134,8 +137,10 @@
 			<p>Arabic</p>
 			<p>English</p>
 			<p>French</p>
+			<p>Lithuanian</p>
 			<h1>Authors and Contributors</h1>
 			<p><a href="https://wiki.ubuntu.com/karim" target="_blank">Karim Oulad Chalha</a> Authors & Arabic, French translator.</p>
+			<p><a href="#" target="_blank">Moo</a> Lithuanian translator.</p>
 			<h1>Support or Contact</h1>
 			<p>Having trouble with Project page or the application please report it <a href="https://github.com/karim88/PlankSetting/issues" target="_blank">here</a></p>
 			<p>Ohhh I forget, That whould be nice to tell me what you think of the application ?!?</p>
@@ -187,7 +192,16 @@
 			</script>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/startcount.js"></script>
-	<footer>site disgn &copy 2014 Karim Oulad Chalha under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" width="64" height="24" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</footer>
+	<footer class="footer-page blue darken-1 white-text">
+	<div class="footer-copyright">
+	<div class="container">
+	<p>Site Disgned by &copy 2014 Karim Oulad Chalha</p> Under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" width="64" height="24" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</div>
+	</div>
+	</footer>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/app.js"></script>
+	<script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
 </body>
 </html>
