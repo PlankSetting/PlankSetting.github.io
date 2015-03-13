@@ -121,7 +121,7 @@ and (max-device-width : 480px) {
 		font-size: 30px;
 	}
 	.screen{
-		width: 250px;
+		width: 200px;
 	}
 }
 @media only screen
