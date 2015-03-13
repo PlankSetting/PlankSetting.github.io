@@ -120,6 +120,9 @@ and (max-device-width : 480px) {
 	h3{
 		font-size: 30px;
 	}
+	.screen{
+		width: 250px;
+	}
 }
 @media only screen
 and (min-device-width : 481px)
